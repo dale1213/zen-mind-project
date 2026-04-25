@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zen Mind Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <button class="brand" type="button" data-route="home" aria-label="Go to intro">
+        <span class="enso" aria-hidden="true"></span>
+        <span>Zen Mind Project</span>
+      </button>
+
+      <nav class="top-nav" aria-label="Primary navigation">
+        <button type="button" data-route="home">Intro</button>
+        <button type="button" data-route="sutra">Sutra</button>
+        <button type="button" data-route="poetry">Poetry</button>
+        <button type="button" data-route="drama">Drama</button>
+        <button type="button" data-route="about">About</button>
+        <button type="button" data-route="method">Method</button>
+      </nav>
+
+      <div class="seal" aria-hidden="true">Zen</div>
+    </header>
+
+    <main id="app" tabindex="-1"></main>
+
+    <footer class="bottom-actions" aria-label="Work shortcuts">
+      <button type="button" data-route="sutra">
+        <span aria-hidden="true">Book</span>
+        <strong>Enter Sutra</strong>
+        <span aria-hidden="true">-></span>
+      </button>
+      <button type="button" data-route="poetry">
+        <span aria-hidden="true">Leaf</span>
+        <strong>Enter Poetry</strong>
+        <span aria-hidden="true">-></span>
+      </button>
+      <button type="button" data-route="drama">
+        <span aria-hidden="true">Mask</span>
+        <strong>Enter Drama</strong>
+        <span aria-hidden="true">-></span>
+      </button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
