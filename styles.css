@@ -173,6 +173,13 @@ button {
   font-size: 0.8rem;
 }
 
+.path-subtitle {
+  margin: -0.2rem 0 0.75rem;
+  color: var(--muted);
+  font-style: italic;
+  text-align: center;
+}
+
 .hero h1 {
   max-width: 850px;
   margin: 0 auto;
@@ -324,6 +331,11 @@ button {
   box-shadow: var(--shadow);
 }
 
+.phase-card.is-theme-related {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(183, 155, 93, 0.28), var(--shadow);
+}
+
 .phase-number {
   display: grid;
   place-items: center;
@@ -453,6 +465,10 @@ button {
   margin-top: 1.2rem;
 }
 
+.meaning-block.is-scene {
+  margin-top: 0.9rem;
+}
+
 .meaning-block article {
   padding-top: 1rem;
   border-top: 1px solid var(--line);
@@ -460,7 +476,9 @@ button {
 
 .meaning-block h3,
 .theme-panel h3,
-.about-strip h3 {
+.about-strip h3,
+.detail-toggle h3,
+.overview-details h4 {
   margin: 0 0 0.45rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -469,10 +487,87 @@ button {
 
 .meaning-block p,
 .text-panel p,
-.about-strip p {
+.about-strip p,
+.detail-toggle p,
+.overview-details p {
   margin: 0;
   color: #3d3b38;
   line-height: 1.48;
+}
+
+.detail-toggle,
+.overview-details {
+  margin-top: 1rem;
+  padding: 0.95rem 1rem;
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.detail-toggle summary,
+.overview-details summary {
+  color: var(--active);
+  cursor: pointer;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+.detail-toggle blockquote {
+  margin: 0.85rem 0;
+  color: var(--active);
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.comparison-map {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.85rem;
+}
+
+.comparison-map span {
+  padding: 0.55rem 0.7rem;
+  color: var(--active);
+  background: rgba(13, 71, 123, 0.07);
+  border-left: 3px solid currentColor;
+  font-size: 0.86rem;
+}
+
+.sequence-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.sequence-strip span {
+  position: relative;
+  padding: 0.48rem 0.7rem;
+  color: var(--active);
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.78rem;
+}
+
+.sequence-strip span:not(:last-child)::after {
+  margin-left: 0.45rem;
+  color: var(--active);
+  content: "->";
+}
+
+.final-insight {
+  margin: 1rem 0 0;
+  padding: 0.9rem 1rem;
+  color: var(--active);
+  background: rgba(255, 255, 255, 0.48);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--active);
+  border-radius: 6px;
+  font-style: italic;
+  line-height: 1.45;
 }
 
 .theme-panel {
@@ -495,6 +590,20 @@ button {
   padding-bottom: 0.72rem;
   border-bottom: 1px solid var(--line);
   font-size: 0.88rem;
+}
+
+.theme-list button {
+  width: 100%;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  text-align: left;
+}
+
+.theme-list button:hover,
+.theme-list button.is-active {
+  color: var(--active);
 }
 
 .theme-icon {
@@ -539,7 +648,19 @@ button {
 .citation-card {
   color: var(--active);
   font-style: italic;
+  line-height: 1.5;
   text-align: center;
+}
+
+.overview-grid {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 0.9rem;
+}
+
+.overview-grid article {
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--line);
 }
 
 .text-page {
