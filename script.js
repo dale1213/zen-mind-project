@@ -12,7 +12,7 @@ const works = {
     route: "sutra",
     navLabel: "Sutra",
     accent: "#0d477b",
-    defaultPhaseIndex: 1,
+    defaultPhaseIndex: 2,
     heroImage: "assets/platform sutra/main background.png",
     detailImage: "assets/platform sutra/analysis background.png",
     citationImage: "assets/platform sutra/citation background.png",
@@ -20,21 +20,24 @@ const works = {
     kicker: "Sutra",
     subtitle: "Sudden Enlightenment and the Clarity of the Empty Mind",
     summary:
-      "This page traces Huineng's transformation from ordinary layman to the Sixth Patriarch through three phases of sudden insight, non-attachment, and mind-to-mind transmission.",
+      "This page traces Huineng's transformation from ordinary layman to the Sixth Patriarch through five sections of sudden insight, equal Buddha nature, verse competition, mind-to-mind transmission, and non-dual teaching.",
     pathTitle: "Huineng's Path to Enlightenment",
-    pathSubtitle: "Three Phases of Sudden Awakening",
+    pathSubtitle: "Five Sections of Sudden Awakening",
     aboutTitle: "About This Sutra",
     about:
       "A foundational Chan Buddhist text exploring how sudden awakening transforms identity, perception, and attachment. Huineng's teaching rejects gradual purification and reveals enlightenment as the direct realization of the mind's original clarity.",
     citation:
       "Bodhi originally has no tree;\nThe mirror also has no stand.\nBuddha nature is always clean and pure;\nWhere is there room for dust?",
+    thoughtTitle: "Yinfu's thoughts",
+    thought:
+      "After close-reading Hui-neng's last verse, I interpret his warning of the dangers of epistemic and dualistic ideologies as an obstacle to sudden enlightenment that entraps beings in the endless cycle of reincarnation. In particular, I was drawn to his doctrine that detachment from the form leads to the perception of truth. Hence, the non-dualism between no-thought and true reality leads to enlightenment. Also, I realized that non-attachment is closely related to his argument that enlightenment is a dynamic state, inseparable from a straightforward mind. I found his emphasis on true wisdom, arising from the awakening of the \"Buddha seed,\" resonates with Hui-neng's awakened mind upon listening to the Diamond Sutra, revealing the intrinsic and sudden nature of enlightenment. Therefore, instead of rejecting the importance of teaching as an external trigger of enlightenment, Hui-neng suggests that Dharma is transmitted mind-to-mind beyond the physical form of language.",
     themes: [
-      { label: "Empty Mind", phases: [1] },
-      { label: "Sudden Awakening", phases: [0, 2] },
-      { label: "Non-Attachment", phases: [0, 1] },
-      { label: "No-Thought", phases: [1] },
-      { label: "Identity Transformation", phases: [2] },
-      { label: "Mind-to-Mind Transmission", phases: [2] },
+      { label: "Empty Mind", phases: [2, 4] },
+      { label: "Sudden Awakening", phases: [0, 3] },
+      { label: "Non-Attachment", phases: [1, 2, 4] },
+      { label: "No-Thought", phases: [2, 4] },
+      { label: "Identity Transformation", phases: [3] },
+      { label: "Mind-to-Mind Transmission", phases: [3] },
     ],
     overview: [
       {
@@ -67,29 +70,44 @@ const works = {
           "Huineng's journey of enlightenment begins when he hears the Diamond Sutra recited by a disciple of the Fifth Patriarch.",
         quote: "Upon hearing it my mind became clear and I was awakened.",
         literary:
-          "The diction \"clear\" and \"awakened\" suggests Huineng's intrinsic tendency toward enlightenment. The purifying effect of hearing the Diamond Sutra reveals that auditory exposure to Buddhist literature is as important as reading.",
+          "The language of the mind becoming \"clear\" and \"awakened\" suggests Huineng's intrinsic tendency toward enlightenment. The scene gives the Diamond Sutra a purifying power that works through hearing as well as reading.",
         psychological:
-          "Even though Huineng is illiterate, he can still understand the Dharma through hearing. Enlightenment therefore appears not as textual mastery, but as a sudden transformation of perception.",
-        evidence: {
-          label: "View More Evidence",
-          quote:
-            "Although people from the south and people from the north differ, there is no north and south in Buddha nature.",
-          analysis:
-            "By denying the difference between \"north and south in Buddha nature,\" Huineng demonstrates non-attachment from geographical stereotypes and social discrimination.",
-        },
+          "Even though Huineng is illiterate, his awakening suggests that enlightenment is not dependent on textual mastery. The Dharma becomes an external trigger for a sudden inward transformation.",
       },
       {
-        title: "No-Thought",
+        title: "First Exchange",
         image: "assets/platform sutra/section2.png",
-        short: "Huineng rejects attachment to form and reveals the mind's original clarity.",
+        short: "Huineng denies the spiritual difference between north and south.",
         scene:
-          "Huineng responds to Shenxiu's gradualist verse with a radically different understanding of enlightenment.",
+          "Huineng's first exchange with the Fifth Patriarch challenges the idea that geography or social identity can limit Buddha nature.",
+        quote:
+          "Although people from the south and people from the north differ, there is no north and south in Buddha nature.",
+        literary:
+          "Huineng demonstrates his perception of the Buddha's equalitarian salvation by denying the difference between \"north and south in Buddha nature.\"",
+        psychological:
+          "This exchange shows non-attachment at the level of identity. Huineng refuses to let geographic stereotypes, social hierarchy, or the label of \"barbarian\" define spiritual possibility.",
+      },
+      {
+        title: "Verse Competition",
+        image: "assets/platform sutra/section2.png",
+        short: "Huineng's verse rejects gradual polishing and reveals original purity.",
+        scene:
+          "Shenxiu and Huineng compete through mind-verses, revealing two sharply different models of enlightenment.",
         quote:
           "Bodhi originally has no tree,\nThe mirror also has no stand.\nBuddha nature is always clean and pure;\nWhere is there room for dust?",
         literary:
-          "The repetition of \"no\" denies the physical form of the body and mind, suggesting Huineng's understanding of non-attachment. His realization of the intrinsic purity of Buddha nature liberates his spirit from constant spiritual cleansing.",
+          "By denying the Bodhi tree and mirror, Huineng realizes that the intrinsic purity of Buddha nature liberates the spirit from effortful cleansing. His verse expresses non-attachment and the potential for sudden enlightenment.",
         psychological:
-          "No-thought is not the absence of mental activity, but thinking without attachment to form and dualism. The awakened mind does not suppress thought; it no longer clings to thought.",
+          "Huineng perceives enlightenment as the sudden realization of an empty and non-attached mind, rather than as gradual cultivation or thought suppression.",
+        evidenceItems: [
+          {
+            label: "Shenxiu's Mental Turmoil",
+            quote:
+              "At midnight, without letting anyone see him, he went to write his mind-verse on the central section of the south corridor wall, hoping to gain the Dharma.",
+            analysis:
+              "Shenxiu experiences mental turmoil while imagining Huangren's response to his verse. His spiritual entanglement in success and karmic obstruction reflects attachment rather than Buddhist emptiness.",
+          },
+        ],
         comparison: {
           label: "Compare with Shenxiu",
           title: "Shenxiu's Verse",
@@ -115,6 +133,42 @@ const works = {
         psychological:
           "Although the robe introduces lineage and legitimacy, the Dharma is transmitted \"mind-to-mind.\" Enlightenment is not the acquisition of knowledge, but an ineffable moment of realization inspired by the teaching of the Dharma.",
       },
+      {
+        title: "Huineng's Teaching",
+        image: "assets/platform sutra/section3.png",
+        short: "Meditation, straightforward mind, and no-thought clarify his non-dual Dharma.",
+        scene:
+          "Huineng's later teaching crystallizes the Dharma of Zen Buddhism by warning against attachment to form, doctrine, truth, and dualistic thinking.",
+        quote:
+          "Nowhere is there anything true;\nDon't try to see the True in any way.\nIf you try to see the True,\nYour seeing will be in no way true.\nIf you yourself would gain the True,\nSeparate from the false; there the mind is true.",
+        literary:
+          "Huineng's verse warns that even the search for truth can become an attachment. The Dharma is not grasped by fixing the mind on a concept of the True, but by separating from false forms without turning truth itself into an object.",
+        psychological:
+          "His final teaching presents enlightenment as a dynamic, non-dual state inseparable from straightforward mind. The awakened mind does not reject teaching, but receives Dharma beyond the physical form of language in mind-to-mind transmission.",
+        evidenceItems: [
+          {
+            label: "Meditation and Wisdom",
+            quote:
+              "Meditation itself is the substance of wisdom; wisdom itself is the function of meditation. At the very moment when there is wisdom, then meditation exists in wisdom.",
+            analysis:
+              "Huineng argues for the non-duality between meditation and wisdom. Enlightenment is not achieved after the pathway; it occurs simultaneously with the pathway.",
+          },
+          {
+            label: "Straightforward Mind",
+            quote:
+              "The samadhi of oneness is straightforward mind at all times, walking, staying, sitting, and lying... in all things having no attachments whatsoever.",
+            analysis:
+              "Huineng perceives straightforward mind as direct, non-clinging, and non-obstructive. By liberating the mind from deluding forms, he prevents attachment even to the idea of non-attachment.",
+          },
+          {
+            label: "No-Thought",
+            quote:
+              "No is the separation from the dualism that produces the passions. Thought means thinking of the original nature of True Reality. True Reality is the substance of thoughts.",
+            analysis:
+              "No-thought is not blankness. It is a non-dual and non-attached way of thinking in which true reality is foreseen within no-thought itself rather than reached through suppression.",
+          },
+        ],
+      },
     ],
   },
   poetry: {
@@ -129,22 +183,22 @@ const works = {
     kicker: "Poetry",
     subtitle: "Tranquility, Paradox, and the Fluid Self",
     summary:
-      "This page traces Cold Mountain's movement away from worldly life through three poetic phases of withdrawal, unstable tranquility, and shifting identity.",
+      "Hanshan exemplifies enlightenment as an unstable state that oscillates between serenity of non-attachment and bewilderment caused by earthly entanglement.",
     pathTitle: "Cold Mountain's Path of Detachment",
-    pathSubtitle: "Three Phases of Poetic Withdrawal",
+    pathSubtitle: "Three Phases of Clarity, Detachment, and Instability",
     aboutTitle: "About These Poems",
     about:
       "Cold Mountain's poems reflect a life of retreat, irony, and inward seeing. They present non-attachment not as stable peace, but as an oscillation between clarity, social withdrawal, emotional unrest, and sudden moments of insight.",
     citation:
       "My mind's the autumn moon,\nshining in the blue-green pool,\nreflecting glistening, clear and pure.",
+    thoughtTitle: "Yinfu's thoughts",
+    thought:
+      "My favorite Hanshan poem is Poem 52:\n\nWhen the stupidest folks read my poems,\nthey snort in incomprehension . . .\nWhen the middling sort read my poems,\nthey think them over and pronounce them deep . . .\nWhen a sage reads a poem of mine,\nhis face breaks into a great big smile.\n\nI like this poem the best because Hanshan humorously encapsulates three levels of Zen understanding by describing different reactions to his poems. The incomprehension of the stupidest folks suggests a complete lack of Zen perception and the incapacity to be awakened. The middling readers' act of thinking over and pronouncing the poems deep represents attachment to analysis and gradual accumulation of knowledge rather than sudden realization. The sage's great big smile implies immediate, penetrating insight into the Dharma and a detached, perceptive humor. I think I belong to the second category, because all the content displayed on our website relies on close reading and analysis. Clearly, Hanshan refuses such diligent effort, as it is a form of attachment that distances one from enlightenment.",
     finalInsight:
       "Unlike Huineng's sudden awakening, Hanshan's non-attachment is lyrical, unstable, and repeatedly tested by memory, poverty, irony, and grief.",
     themes: [
-      { label: "Social Withdrawal", phases: [0] },
-      { label: "Tranquil Mind", phases: [1] },
-      { label: "Unstable Mind", phases: [2] },
-      { label: "Paradox", phases: [1] },
-      { label: "Fluid Identity", phases: [2] },
+      { label: "Inner serenity", phases: [0] },
+      { label: "bewilderment", phases: [1] },
     ],
     overview: [
       {
@@ -170,40 +224,11 @@ const works = {
     ],
     phases: [
       {
-        title: "Withdrawal",
-        image: "assets/cold mountain poems/section1.png",
-        short: "Cold Mountain turns away from worldly ambition and social life.",
-        scene:
-          "Hanshan reflects on a life once misguided by secular pursuits, learning, alchemy, and external quests for immortality.",
-        quote:
-          "Today I'm on my way\nhome to Cold Mountain.\nThere, I'll bed down in the creek,\njust to wash out my ears.",
-        literary:
-          "The metaphor \"wandered a million miles\" represents a prolonged and strenuous search, suggesting ascetic yet misdirected effort. His attempts at alchemical elixirs and memorized writings reveal the futility of attaining enlightenment through goal-oriented extrinsic approaches.",
-        psychological:
-          "The return to Cold Mountain marks both a physical and spiritual reorientation. \"Washing out my ears\" signifies not just purification, but the deliberate clearing away of inherited attachment to doctrines and distracting thoughts.",
-        evidenceItems: [
-          {
-            label: "Poem 17: Ironic Detachment",
-            quote:
-              "Now she laughs that I don't have money.\nShe laughs that I've fallen behind.\nI laugh that she's gotten ahead.\nBoth of us laughing, no stopping us.",
-            analysis:
-              "Hanshan and the landlady's mutual laughter suggest the coexistence of two states: the pursuit of wealth and social status, and the denial of restraint by secular values without a complete withdrawal from society.",
-          },
-          {
-            label: "Poem 37: False Paths",
-            quote:
-              "They throw out the gold and haul away the straw.\nBut fooling other folks, they've fooled themselves.",
-            analysis:
-              "Hanshan critiques people's delusion in being attached to external signs, forms, and practices of enlightenment.",
-          },
-        ],
-      },
-      {
-        title: "Paradoxical Tranquility",
+        title: "Clarity and Tranquility",
         image: "assets/cold mountain poems/section2.png",
-        short: "Peace appears, yet the mind remains unstable and reflective.",
+        short: "Moon imagery reveals a clear, reflective, and non-dual mind.",
         scene:
-          "Hanshan describes his mind through the image of the autumn moon reflected in a clear pool.",
+          "Hanshan describes enlightenment through moonlight, clear water, and the settled stillness of Cold Mountain.",
         quote:
           "My mind's the autumn moon,\nshining in the blue-green pool,\nreflecting glistening, clear and pure . . .\nThere's nothing to compare it to,\nwhat else can I say?",
         literary:
@@ -212,34 +237,49 @@ const works = {
           "His mind is not a fixed inner entity, but a reflective non-dual awareness. The rhetorical question \"what else can I say?\" reflects both contentment and the ineffability of this state, implying that such clarity exceeds conceptual articulation.",
         evidenceItems: [
           {
-            label: "Poem 7: Clarity and Mystery",
+            label: "Poem 7: Moon as the Pivot of the Heart",
             quote:
-              "Alone, its spirit naturally comes clear.\nSwallowed in emptiness in this cave of darkest mystery,\nbecause of the finger pointing, I saw the moon.\nThat moon became the pivot of my heart.",
+              "I sit beneath the cliff, quiet and alone.\nRound moon in the middle of the sky's a bird ablaze:\nall things are seen mere shadows in its brilliance,\nthat single wheel of perfect light . . .\nAlone, its spirit naturally comes clear.\nSwallowed in emptiness in this cave of darkest mystery,\nbecause of the finger pointing, I saw the moon.\nThat moon became the pivot of my heart.",
             analysis:
-              "The antithesis of \"perfect light\" and \"darkest mystery\" reveals ever-changing mental images, suggesting a state of non-attachment that reflects transformation clearly and truthfully.",
+              "The round moon as a bird ablaze reflects the dynamic and fluid nature of a Zen mind. The contrast between perfect light and darkest mystery reveals transitory mental images, while the moon becoming the pivot of the heart marks a reorganization of self-awareness upon enlightenment.",
           },
           {
-            label: "Poem 41: Poverty and Openness",
+            label: "Poem 82: Being and Nothingness",
             quote:
-              "Frost and dew can soak through thatch,\nbut the moon flowers white\nthrough the window made of old bottles;\nI'm poor, but I can build more windows now.",
+              "My life's grown from old roots on Cold Mountain,\non the stone cliffs, perched, heart breathing free.\nAt the end no mere image ever leaves scars:\nI'm settled in to watch this universe flow by.\nTime's light and shadows rise, a flutter of brilliance,\nshining where my heart dwells.\nBeing, and nothingness, one dharma before me.\nThe tool I use shines from the Pearl of Wisdom.\nWhen you know the use of the method\nthat is no method at all, then every single place\nis perfect.",
             analysis:
-              "Hanshan presents the paradoxical relationship between economic deprivation and intellectual richness. The transition from physical discomfort to the beauty of moonlight reveals detachment from material poverty.",
-          },
-          {
-            label: "Poem 82: Settled Flow",
-            quote:
-              "I'm settled in to watch this universe flow by.\nBeing, and nothingness, one dharma before me.",
-            analysis:
-              "The juxtaposition between his settled stillness and the universe's dynamic flow suggests calm openness in allowing the world to change.",
+              "Hanshan moves from rootedness to non-attachment. His settled stillness beside the universe's flow suggests calm openness to impermanence, and the unity of being and nothingness presents non-dual Zen philosophy as the ground of his detachment.",
           },
         ],
       },
       {
-        title: "Fluid Identity",
-        image: "assets/cold mountain poems/section3.png",
-        short: "Poet, recluse, sage, and grieving human merge into a shifting self.",
+        title: "Rejection of Materialism Without Social Seclusion",
+        image: "assets/cold mountain poems/section1.png",
+        short: "Hanshan refuses material success without fully leaving society.",
         scene:
-          "Hanshan confronts mortality, loss, family, friendship, and the emotional weight of impermanence.",
+          "Hanshan meets worldly comparison, poverty, poetry, wine, and domestic discomfort without letting them define spiritual value.",
+        quote:
+          "My old landlady\ngot rich a couple years ago.\nUsed to be poorer than me.\nNow she laughs that I don't have money.\nShe laughs that I've fallen behind.\nI laugh that she's gotten ahead.\nBoth of us laughing, no stopping us.\nLady of the Land, and the Lord of the West.",
+        literary:
+          "The mutual laughter between Hanshan and the landlady juxtaposes secular success with spiritual detachment. The contrast between \"fallen behind\" and \"gotten ahead\" turns social comparison into humor rather than resentment.",
+        psychological:
+          "Hanshan does not completely withdraw from society; instead, he refuses to be restrained by its judgments. His laughter shows that he recognizes social hierarchy without becoming emotionally trapped by it.",
+        evidenceItems: [
+          {
+            label: "Poem 41: Poverty and Openness",
+            quote:
+              "A scroll full of poems by poets of talent,\nand big pot full of wine fit for saints.\nI love to walk out to watch the young bull calves;\nsitting, I'd rather stay close to home.\nFrost and dew can soak through thatch,\nbut the moon flowers white\nthrough the window made of old bottles;\nI'm poor, but I can build more windows now,\na couple more cups, to go\nwith the chanting of two or three new poems.",
+            analysis:
+              "Hanshan presents the paradoxical relationship between economic deprivation and intellectual richness. The transition from frost and dew soaking through thatch to moonlight flowering through old-bottle windows transforms poverty into openness, mental transparency, and spiritual fulfillment.",
+          },
+        ],
+      },
+      {
+        title: "Spiritual Instability",
+        image: "assets/cold mountain poems/section3.png",
+        short: "Earthly entanglement returns as restlessness, grief, and renewed retreat.",
+        scene:
+          "Hanshan remembers misguided pursuits, confronts mortality, and returns again to Cold Mountain for purification.",
         quote:
           "Why's my heart always, always spinning?\nA human's life is just a mushroom's life,\nfinished in a morning.",
         literary:
@@ -248,18 +288,18 @@ const works = {
           "Instead, Hanshan experiences unbearable frustration and misery upon contemplating the inevitable loss of his family and friends. Enlightenment therefore appears as a dynamic and unstable mental state, not a permanent condition of calm.",
         evidenceItems: [
           {
-            label: "Poem 52: Readerly Insight",
+            label: "Poem 47: Return to Cold Mountain",
             quote:
-              "When a sage reads a poem of mine,\nhis face breaks into a great big smile.",
+              "I was born just thirty years ago,\nbut I've wandered a million miles already.\nAlong the River through the green grass on the banks,\nout to the borderlands, where the red dust roils.\nChewed herbs, cooked up alchemical elixirs,\ntrying to become an Immortal.\nRead all the Writings, chanted the Histories aloud,\ntrying to learn them all by heart . . .\nToday I'm on my way\nhome to Cold Mountain.\nThere, I'll bed down in the creek, just to wash out\nmy ears.",
             analysis:
-              "The sage's reaction with a \"great big smile\" implies immediate penetrating insight into the Dharma of Zen and a detached, perceptive humor.",
+              "The metaphor of wandering a million miles represents a prolonged and strenuous search, while alchemy and memorized writings reveal the futility of goal-oriented approaches to enlightenment. Returning to Cold Mountain becomes both physical and spiritual reorientation, and washing out the ears clears away obsession with doctrines.",
           },
           {
-            label: "Poem 82: No Method",
+            label: "Poem 87: Grief and Return",
             quote:
-              "Being, and nothingness, one dharma before me.\nWhen you know the use of the method\nthat is no method at all,\nthen every single place is perfect.",
+              "How to bear that in two decades at the most\nmy family, all my friends, will be gone cold and fallen down.\nThese thoughts weigh on my heart, and so of course I grieve,\na grief like love, unbearable.\nWhat to do, what should I do?\nTake this body home\ninto my mountain shade.",
             analysis:
-              "By portraying being and nothingness as \"one dharma,\" Hanshan shows a non-dualistic Zen philosophy as a hallmark of his non-attachment.",
+              "Hanshan's recognition of impermanence does not immediately produce non-attachment. He feels grief like love, unbearable, showing that enlightenment remains dynamic and unstable while social obligation continues to weigh on the mind.",
           },
         ],
       },
@@ -285,6 +325,9 @@ const works = {
       "This drama presents non-attachment as a delayed and embodied process. Liu Cui's courtesan identity conceals Yutong's failed monastic discipline, while Moonlight Monk's performance reconstructs the forgotten past and reveals enlightenment as the recovery of vision beyond gender, desire, and bodily form.",
     citation:
       "You used the golden needle to remove the cataracts from both my eyes!",
+    thoughtTitle: "Tianle's thoughts",
+    thought:
+      "In Chan Master Yu's Dream of Cuixiang, he thinks of the drama as a rethinking of non-attachment. In the story, although Yutong has been practicing non-attachment in pursuit of enlightenment, he is still seduced by Red Lotus and overwhelmed by anger and desire. At this moment, he becomes “attached.” He reincarnates as Liu Cui to destroy Liu Xuanjiao's family reputation. Yet after indulging in the illusions of the pleasure world, Liu Cui can still be enlightened by the Moonlight Monk’s inspiration and becomes aware of her identity as the reincarnation of Yutong. She wears monk clothing and returns to her spiritual identity after her own awakening. Tianle therefore argues that Chan Master Yu's Dream of Cuixiang is a strong example of how Chan teaching views the fragility of enlightenment and awakening.",
     finalInsight:
       "Drama makes enlightenment delayed, embodied, theatrical, and dependent on recovering a forgotten karmic identity.",
     themes: [
@@ -324,85 +367,70 @@ const works = {
     ],
     phases: [
       {
-        title: "Previous Life",
+        title: "Original Identity and Collapse",
         image: "assets/drama/phase1.png",
-        short: "Yutong pursues enlightenment but has not yet reached final attainment.",
-        scene:
-          "Before becoming Liu Cui, the hidden self is Yutong, a monk who has spent decades pursuing enlightenment.",
-        quote:
-          "Having now lived here over twenty years, I realize I haven't much time left to reach the final level of spiritual attainment.",
-        literary:
-          "Liu Cui's hidden origin is Yutong, a monk who has spent decades pursuing enlightenment. Her later courtesan identity is therefore not permanent, but a temporary karmic disguise.",
-        psychological:
-          "The play begins by destabilizing identity: the visible self is not the complete self, and spiritual history can remain hidden beneath a worldly role.",
-      },
-      {
-        title: "Spiritual Collapse",
-        image: "assets/drama/phase2.png",
-        short: "Yutong's discipline collapses when desire appears.",
-        scene:
-          "Yutong is seduced by Red Lotus, and his long-standing discipline breaks down.",
-        quote: "That's it! I'm finished! I fell into this beast's snare!",
-        literary:
-          "Yutong's discipline collapses when he is seduced by Red Lotus. This shows that non-attachment remains fragile even after years of practice.",
-        psychological:
-          "Desire interrupts religious discipline and exposes the instability of non-attachment. The monk knows the path, but knowledge alone does not free the mind.",
-      },
-      {
-        title: "Revenge Reincarnation",
-        image: "assets/drama/phase3.png",
-        short: "Yutong chooses rebirth not as release, but as punishment.",
-        scene:
-          "Instead of releasing his resentment, Yutong chooses to be reborn into Liu Xuanjiao's family as Liu Cui.",
-        quote:
-          "I have no choice but to turn head over heels and be reborn into the womb of Liu Xuanjiao's wife.",
-        literary:
-          "Instead of releasing his anger, Yutong chooses reincarnation as revenge. Liu Cui's existence begins with attachment, resentment, and karmic entanglement.",
-        psychological:
-          "Rebirth does not erase attachment. It relocates unresolved desire into a new body, where identity becomes split between hidden spiritual origin and present worldly life.",
-        evidenceItems: [
+        short: "Yutong's monastic identity is revealed, then broken by desire.",
+        detailPairs: [
           {
-            label: "Courtesan Punishment",
             quote:
-              "I'll be his daughter and grow up to be a prostitute, and I will destroy the family's reputation.",
+              "Having now lived here over twenty years, I realize I haven't much time left to reach the final level of spiritual attainment.",
             analysis:
-              "Liu Cui's female and courtesan identity is deliberately produced as punishment. Gender becomes a theatrical role shaped by revenge.",
+              "Liu Cui's hidden origin is Yutong, a monk who has spent decades pursuing enlightenment. Her later courtesan identity is therefore not permanent, but a temporary karmic disguise.",
           },
           {
-            label: "Loss of Memory",
-            quote: "...is reborn with no memory of his former identity.",
+            quote: "That's it! I'm finished! I fell into this beast's snare!",
             analysis:
-              "Liu Cui forgets that she was Yutong. Her identity is split between a hidden spiritual origin and a present worldly life.",
+              "Yutong's discipline collapses when he is seduced by Red Lotus. It shows that Yutong's status in non-attachment was fragile even after years of practice.",
+          },
+          {
+            quote:
+              "I have no choice but to turn head over heels and be reborn into the womb of Liu Xuanjiao's wife.",
+            analysis:
+              "Instead of releasing his anger, Yutong chooses reincarnation as revenge. He wants to destroy the life and reputation of Liu Xuanjiao.",
           },
         ],
       },
       {
-        title: "Courtesan Identity",
-        image: "assets/drama/phase4.png",
-        short: "Liu Cui lives within desire, performance, and social decline.",
-        scene:
-          "Liu Cui lives as a courtesan, performing pleasure for male clients while remaining emotionally vulnerable.",
-        quote:
-          "Ever since I fell from high status into prostitution,\nI've lived for some years as a Little Su in Qiantang.",
-        literary:
-          "Liu Cui enters the world of desire through social decline. Her life is shaped by class loss and sexuality.",
-        psychological:
-          "Her courtesan role turns identity into performance. She survives through erotic exchange, yet this performance also deepens her distance from her forgotten spiritual origin.",
-        evidenceItems: [
+        title: "Reincarnation and Identity Split",
+        image: "assets/drama/phase2.png",
+        short: "Yutong becomes Liu Cui through revenge, gender transformation, and memory loss.",
+        detailPairs: [
           {
-            label: "Life in Desire",
+            quote:
+              "I'll be his daughter and grow up to be a prostitute, and I will destroy the family's reputation.",
+            analysis:
+              "Liu Cui's female and courtesan identity is deliberately produced as punishment. Gender becomes an important factor in the story because the new body is designed as a role of revenge.",
+          },
+          {
+            quote: "...is reborn with no memory of his former identity.",
+            analysis:
+              "Liu Cui forgets that she was Yutong. Her identity is split between a hidden spiritual origin and a present worldly life. This raises the central question of whether Liu Cui is still Yutong or has become someone else.",
+          },
+          {
+            quote:
+              "Ever since I fell from high status into prostitution,\nI've lived for some years as a Little Su in Qiantang.",
+            analysis:
+              "Liu Cui enters the world of desire through social decline. Her life is shaped by class loss and sexuality, which strongly distinguishes her present identity from Yutong's original monastic identity.",
+          },
+        ],
+      },
+      {
+        title: "Worldly Attachment",
+        image: "assets/drama/phase3.png",
+        short: "Before awakening, Liu Cui is absorbed in desire, routine, and ordinary perception.",
+        detailPairs: [
+          {
             quote: "Countless ones have I entertained upon pleasure boats.",
             analysis:
-              "She survives by performing pleasure for male clients. This makes her a figure of attachment, performance, and erotic exchange.",
+              "She survives by performing pleasure for male clients. At this point, Liu Cui is clearly attached to the world of desire and erotic exchange.",
           },
           {
-            label: "Emotional Residue",
-            quote: "But seeing a peach blossom breaks my heart.",
+            quote:
+              "Today we have planned to look at the peach blossoms on the lake... Here I am, but where is he?",
             analysis:
-              "Liu Cui projects her grief, longing, and emotional vulnerability toward the peach blossom.",
+              "Her ordinary courtesan routine is interrupted by Moonlight Monk. This interruption marks the beginning of the awakening process.",
           },
           {
-            label: "Initial Dismissal",
             quote: "You mean that you are from the Western Heavens? What nonsense!",
             analysis:
               "Liu Cui first rejects Moonlight Monk's signs as absurd. Her mind is still trapped in ordinary worldly perception.",
@@ -410,96 +438,87 @@ const works = {
         ],
       },
       {
-        title: "Theatrical Recognition",
-        image: "assets/drama/phase5.png",
-        short: "Moonlight Monk reconstructs the past through performance.",
-        scene:
-          "Moonlight Monk does not explain Yutong's past through doctrine. He performs it through objects, masks, costumes, and gestures.",
-        quote:
-          "He takes out the gauze hat... puts on the female mask... He puts on the monk's cap...",
-        literary:
-          "Moonlight Monk reconstructs Yutong's past through performance rather than doctrine. Liu Cui's awakening is theatrical, visual, and embodied.",
-        psychological:
-          "Awakening begins through misreading, curiosity, and partial reconstruction. Liu Cui does not recover memory all at once; she gradually decodes signs until reincarnation becomes self-recognition.",
-        sequence: ["Misreading", "Curiosity", "Decoding", "Self-Connection", "Revelation"],
-        evidenceItems: [
+        title: "Recognition Through Performance",
+        image: "assets/drama/phase4.png",
+        short: "Moonlight Monk begins awakening Liu Cui through gesture, costume, and pantomime.",
+        detailPairs: [
           {
-            label: "First Recognition",
             quote: "...it must mean that this is a way of saying 'reincarnation.'",
             analysis:
-              "She begins to decode the monk's gestures. Awakening starts not as sudden realization, but as a partial interpretation.",
+              "She begins to decode the monk's gestures. Awakening becomes a process rather than a single sudden event.",
           },
           {
-            label: "Awakening Curiosity",
             quote: "Though he is a mad monk, there's something strange about it.",
             analysis:
               "Her skepticism turns into curiosity. This marks the first psychological opening toward enlightenment.",
           },
           {
-            label: "Erotic Misreading",
+            quote:
+              "He takes out the gauze hat... puts on the female mask... He puts on the monk's cap...",
+            analysis:
+              "Moonlight Monk reconstructs Yutong's past through performance rather than doctrine. Liu Cui's awakening is theatrical, visual, and embodied.",
+          },
+        ],
+      },
+      {
+        title: "Misreading and Revelation",
+        image: "assets/drama/phase5.png",
+        short: "Liu Cui misreads the performance before gradually recognizing herself.",
+        detailPairs: [
+          {
             quote:
               "This shiny bald calabash presses on this girl in red... Grinding and grinding until the juice comes out.",
             analysis:
-              "Liu Cui interprets the scene through sexual imagery. Her present identity as a courtesan shapes how she understands spiritual truth.",
+              "Since Liu Cui is still deeply attached, her interpretation of the monk's behavior moves in the wrong direction. Her identity as a courtesan shapes how she understands the world.",
           },
           {
-            label: "Self-Connection",
-            quote: "Ah! Is it that this reincarnation is in my body?",
+            quote: "...an official who is sending that woman off on some kind of dirty business?",
             analysis:
-              "Liu Cui finally connects reincarnation to herself. Yet she still understands it through the body rather than through spiritual identity.",
+              "She begins to reconstruct the plot behind Yutong's fall. Memory returns gradually, raising again the question of who Liu Cui is after passing through these experiences.",
           },
           {
-            label: "Direct Revelation",
+            quote: "...it must be that I, too, created this grievance and enmity!",
+            analysis:
+              "She assumes she is involved in a sexual or karmic debt. Liu Cui's interpretation is still shaped by guilt, desire, and worldly causality.",
+          },
+          {
             quote:
               "Red Lotus made a monkey out of me,\nSo I shall hide for a springtime in the skin of a Green Willow.",
             analysis:
               "Moonlight Monk directly reveals Yutong's hidden identity inside Liu Cui. \"Green Willow\" links Liu Cui's body to Yutong's revenge plot.",
           },
-        ],
-      },
-      {
-        title: "Restored Awakening",
-        image: "assets/drama/phase6.png",
-        short: "Liu Cui casts off the body and returns to Yutong.",
-        scene:
-          "Liu Cui fully realizes that she is Yutong's reincarnation and sheds the visible signs of her feminine and courtesan identity.",
-        quote: "You used the golden needle to remove the cataracts from both my eyes!",
-        literary:
-          "Liu Cui describes enlightenment as restored sight. She can finally see through illusion, desire, and her mistaken identity.",
-        psychological:
-          "Awakening is staged as the removal of a deluded self. By shedding feminine costume and reclaiming monk identity, Liu Cui moves beyond the dualisms of male/female, monk/courtesan, purity/desire, and body/spirit.",
-        evidenceItems: [
           {
-            label: "Full Awakening",
             quote: "I get it! I get it!",
             analysis:
               "Liu Cui fully realizes that she is Yutong's reincarnation. This is the turning point from confusion to enlightenment.",
           },
+        ],
+      },
+      {
+        title: "Non-Dual Enlightenment",
+        image: "assets/drama/phase6.png",
+        short: "Liu Cui sheds gendered identity and moves beyond dualistic oppositions.",
+        detailPairs: [
           {
-            label: "Shedding Feminine Identity",
             quote:
               "female lead throws down her hair bun and acts out taking off her women's clothes.",
             analysis:
-              "She abandons the visual signs of femininity and courtesan identity. Enlightenment is staged as the removal of a deluded self.",
+              "She abandons the visual signs of femininity and courtesan identity. Enlightenment is staged as the removal of a deluded self, raising the question of whether the awakening belongs to Liu Cui or Yutong.",
           },
           {
-            label: "Return to Yutong",
+            quote: "...giving them to female lead to put on.",
+            analysis:
+              "By putting on monk's clothing, Liu Cui returns to Yutong's spiritual identity. Costume change becomes a symbol of inner transformation.",
+          },
+          {
             quote: "Younger Brother,\nYou finished this scene in an instant.",
             analysis:
               "Moonlight Monk addresses Liu Cui as Yutong again. Her courtesan identity disappears, replaced by brotherhood and spiritual recognition.",
           },
           {
-            label: "Beyond Dualism",
             quote: "Combine moving on and not moving on to make one way.",
             analysis:
-              "The play moves beyond simple oppositions: male/female, monk/courtesan, purity/desire, motion/stillness. Enlightenment means seeing these dualities as unstable and transformative.",
-          },
-          {
-            label: "Casting Off the Body",
-            quote:
-              "We have cast away this one skin sack full of stolen property.",
-            analysis:
-              "The body is finally treated as temporary and illusory. Liu Cui's transformation ends with a rejection of attachment to physical identity itself.",
+              "The play moves beyond simple oppositions: male/female, monk/courtesan, purity/desire, motion/stillness. It suggests that regardless of identity, gender, or experience, anyone can move toward enlightenment and become non-attached.",
           },
         ],
       },
@@ -584,9 +603,8 @@ function renderHome() {
   app.innerHTML = `
     ${renderHero({
       image: assets.homeBackground,
-      title: "The Harmony & Dissonance of Non-Attachment",
+      title: "A Psychological Analysis of Chinese Zen Buddhism Texts",
       subtitle: "A Psychological Exploration of Mind, Desire, and Enlightenment in Chinese Zen Texts",
-      question: "If enlightenment requires non-attachment, why does the human mind remain attached?",
       accent: "#0d477b",
     })}
     <section class="content-shell">
@@ -615,7 +633,6 @@ function renderHome() {
 function renderWork(work) {
   const phase = work.phases[state.phaseIndex] ?? work.phases[0];
   state.phaseIndex = work.phases.indexOf(phase);
-  const themes = work.themes.map((theme) => (typeof theme === "string" ? { label: theme, phases: [] } : theme));
 
   app.innerHTML = `
     ${renderHero({
@@ -649,34 +666,9 @@ function renderWork(work) {
           </div>
 
           <div class="about-row">
-            <div class="citation-card" style="--citation-image: ${cssImage(work.citationImage)}">
-              "${preserveLines(work.citation)}"<br />
-              <small>- ${work.title}</small>
-            </div>
-            <div class="about-strip" style="--citation-image: ${cssImage(work.citationImage)}">
-              <h3>${work.aboutTitle}</h3>
-              <p>${work.about}</p>
-              ${
-                work.overview
-                  ? `
-                    <details class="overview-details">
-                      <summary>Read Scholarly Overview -></summary>
-                      <div class="overview-grid">
-                        ${work.overview
-                          .map(
-                            (item) => `
-                              <article>
-                                <h4>${item.title}</h4>
-                                <p>${item.text}</p>
-                              </article>
-                            `,
-                          )
-                          .join("")}
-                      </div>
-                    </details>
-                  `
-                  : ""
-              }
+            <div class="thought-card" style="--citation-image: ${cssImage(work.citationImage)}">
+              <h3>${work.thoughtTitle ?? "Reflections"}</h3>
+              <p>${preserveLines(work.thought ?? work.about)}</p>
             </div>
           </div>
         </div>
@@ -685,97 +677,102 @@ function renderWork(work) {
           <p class="phase-label">Phase ${state.phaseIndex + 1} of ${work.phases.length}</p>
           <h2>${phase.title}</h2>
           <p>${phase.short}</p>
-          <div class="meaning-block is-scene">
-            ${
-              phase.scene
-                ? `
-                  <article>
-                    <h3>Scene</h3>
-                    <p>${phase.scene}</p>
-                  </article>
-                `
-                : ""
-            }
-          </div>
-          <blockquote class="quote">${preserveLines(phase.quote)}</blockquote>
-          <div class="meaning-block">
-            <article>
-              <h3>Literary Meaning</h3>
-              <p>${phase.literary}</p>
-            </article>
-            <article>
-              <h3>Psychological Interpretation</h3>
-              <p>${phase.psychological}</p>
-            </article>
-          </div>
           ${
-            phase.evidence
+            phase.detailPairs
               ? `
-                <details class="detail-toggle">
-                  <summary>${phase.evidence.label}</summary>
-                  <blockquote>${preserveLines(phase.evidence.quote)}</blockquote>
-                  <p>${phase.evidence.analysis}</p>
-                </details>
-              `
-              : ""
-          }
-          ${
-            phase.evidenceItems
-              ? phase.evidenceItems
-                  .map(
-                    (item) => `
-                      <details class="detail-toggle">
-                        <summary>${item.label}</summary>
-                        <blockquote>${preserveLines(item.quote)}</blockquote>
-                        <p>${item.analysis}</p>
-                      </details>
-                    `,
-                  )
-                  .join("")
-              : ""
-          }
-          ${
-            phase.sequence
-              ? `
-                <div class="sequence-strip" aria-label="Recognition sequence">
-                  ${phase.sequence.map((item) => `<span>${item}</span>`).join("")}
+                <div class="quote-analysis-list">
+                  ${phase.detailPairs
+                    .map(
+                      (item) => `
+                        <article class="quote-analysis">
+                          <h3>Quotation</h3>
+                          <blockquote>${preserveLines(item.quote)}</blockquote>
+                          <h3>Analysis</h3>
+                          <p>${item.analysis}</p>
+                        </article>
+                      `,
+                    )
+                    .join("")}
                 </div>
               `
-              : ""
-          }
-          ${
-            phase.comparison
-              ? `
-                <details class="detail-toggle comparison-toggle">
-                  <summary>${phase.comparison.label}</summary>
-                  <h3>${phase.comparison.title}</h3>
-                  <blockquote>${preserveLines(phase.comparison.quote)}</blockquote>
-                  <p>${phase.comparison.analysis}</p>
-                  <div class="comparison-map">
-                    ${phase.comparison.contrast.map((item) => `<span>${item}</span>`).join("")}
-                  </div>
-                </details>
+              : `
+                <div class="meaning-block is-scene">
+                  ${
+                    phase.scene
+                      ? `
+                        <article>
+                          <h3>Scene</h3>
+                          <p>${phase.scene}</p>
+                        </article>
+                      `
+                      : ""
+                  }
+                </div>
+                <blockquote class="quote">${preserveLines(phase.quote)}</blockquote>
+                <div class="meaning-block">
+                  <article>
+                    <h3>Literary Meaning</h3>
+                    <p>${phase.literary}</p>
+                  </article>
+                  <article>
+                    <h3>Psychological Interpretation</h3>
+                    <p>${phase.psychological}</p>
+                  </article>
+                </div>
+                ${
+                  phase.evidence
+                    ? `
+                      <details class="detail-toggle">
+                        <summary>${phase.evidence.label}</summary>
+                        <blockquote>${preserveLines(phase.evidence.quote)}</blockquote>
+                        <p>${phase.evidence.analysis}</p>
+                      </details>
+                    `
+                    : ""
+                }
+                ${
+                  phase.evidenceItems
+                    ? phase.evidenceItems
+                        .map(
+                          (item) => `
+                            <details class="detail-toggle">
+                              <summary>${item.label}</summary>
+                              <blockquote>${preserveLines(item.quote)}</blockquote>
+                              <p>${item.analysis}</p>
+                            </details>
+                          `,
+                        )
+                        .join("")
+                    : ""
+                }
+                ${
+                  phase.sequence
+                    ? `
+                      <div class="sequence-strip" aria-label="Recognition sequence">
+                        ${phase.sequence.map((item) => `<span>${item}</span>`).join("")}
+                      </div>
+                    `
+                    : ""
+                }
+                ${
+                  phase.comparison
+                    ? `
+                      <details class="detail-toggle comparison-toggle">
+                        <summary>${phase.comparison.label}</summary>
+                        <h3>${phase.comparison.title}</h3>
+                        <blockquote>${preserveLines(phase.comparison.quote)}</blockquote>
+                        <p>${phase.comparison.analysis}</p>
+                        <div class="comparison-map">
+                          ${phase.comparison.contrast.map((item) => `<span>${item}</span>`).join("")}
+                        </div>
+                      </details>
+                    `
+                    : ""
+                }
               `
-              : ""
           }
           ${work.finalInsight ? `<p class="final-insight">${work.finalInsight}</p>` : ""}
         </article>
-
-        <aside class="theme-panel">
-          <h3>Key Themes</h3>
-          <ul class="theme-list">
-            ${themes
-              .map(
-                (theme, index) => `
-                  <li>
-                    <span class="theme-icon">${index + 1}</span>
-                    <button type="button" data-theme-phases="${theme.phases.join(",")}">${theme.label}</button>
-                  </li>
-                `,
-              )
-              .join("")}
-          </ul>
-        </aside>
       </div>
     </section>
   `;
@@ -845,25 +842,6 @@ function render() {
 document.addEventListener("click", (event) => {
   const routeButton = event.target.closest("[data-route]");
   const phaseButton = event.target.closest("[data-phase]");
-  const themeButton = event.target.closest("[data-theme-phases]");
-
-  if (themeButton) {
-    const relatedPhases = themeButton.dataset.themePhases
-      .split(",")
-      .filter(Boolean)
-      .map((phase) => Number.parseInt(phase, 10));
-
-    document.querySelectorAll("[data-theme-phases]").forEach((button) => {
-      button.classList.toggle("is-active", button === themeButton);
-    });
-
-    document.querySelectorAll("[data-phase]").forEach((button) => {
-      const phaseIndex = Number.parseInt(button.dataset.phase, 10);
-      button.classList.toggle("is-theme-related", relatedPhases.includes(phaseIndex));
-    });
-
-    return;
-  }
 
   if (phaseButton) {
     const phaseIndex = Number.parseInt(phaseButton.dataset.phase, 10);

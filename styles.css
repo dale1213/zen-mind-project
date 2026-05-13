@@ -284,7 +284,7 @@ button {
 
 .work-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr) 180px;
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
   gap: 1rem;
   align-items: stretch;
   margin-top: 1.05rem;
@@ -293,8 +293,14 @@ button {
 .phase-track {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(var(--phase-count), minmax(0, 1fr));
+  grid-auto-columns: minmax(170px, 1fr);
+  grid-auto-flow: column;
   gap: 0.85rem;
+  overflow-x: auto;
+  overflow-y: visible;
+  padding: 0 0.15rem 0.7rem;
+  scroll-snap-type: x proximity;
+  scrollbar-color: var(--active) rgba(13, 71, 123, 0.1);
 }
 
 .phase-track::before {
@@ -319,6 +325,7 @@ button {
   background: rgba(252, 249, 242, 0.9);
   border: 1px solid var(--line);
   border-radius: 6px;
+  scroll-snap-align: start;
   transition:
     transform 180ms ease,
     border-color 180ms ease,
@@ -389,7 +396,6 @@ button {
 }
 
 .detail-panel,
-.theme-panel,
 .text-panel {
   background: rgba(252, 249, 243, 0.86);
   border: 1px solid var(--line);
@@ -475,7 +481,6 @@ button {
 }
 
 .meaning-block h3,
-.theme-panel h3,
 .about-strip h3,
 .detail-toggle h3,
 .overview-details h4 {
@@ -518,6 +523,40 @@ button {
   color: var(--active);
   font-style: italic;
   line-height: 1.45;
+}
+
+.quote-analysis-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.quote-analysis {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.44);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.quote-analysis h3 {
+  margin: 0 0 0.45rem;
+  color: var(--active);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.quote-analysis blockquote {
+  margin: 0 0 0.85rem;
+  color: var(--active);
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.quote-analysis p {
+  margin: 0;
+  color: #3d3b38;
+  line-height: 1.48;
 }
 
 .comparison-map {
@@ -570,61 +609,16 @@ button {
   line-height: 1.45;
 }
 
-.theme-panel {
-  padding: 1.5rem;
-}
-
-.theme-list {
-  display: grid;
-  gap: 0.72rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.theme-list li {
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  gap: 0.65rem;
-  align-items: center;
-  padding-bottom: 0.72rem;
-  border-bottom: 1px solid var(--line);
-  font-size: 0.88rem;
-}
-
-.theme-list button {
-  width: 100%;
-  padding: 0;
-  color: inherit;
-  background: transparent;
-  border: 0;
-  text-align: left;
-}
-
-.theme-list button:hover,
-.theme-list button.is-active {
-  color: var(--active);
-}
-
-.theme-icon {
-  display: grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  color: var(--active);
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 50%;
-}
-
 .about-row {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
   margin-top: 1rem;
 }
 
 .citation-card,
-.about-strip {
+.about-strip,
+.thought-card {
   position: relative;
   overflow: hidden;
   padding: 1.3rem 1.6rem;
@@ -634,7 +628,8 @@ button {
 }
 
 .citation-card::before,
-.about-strip::before {
+.about-strip::before,
+.thought-card::before {
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -650,6 +645,21 @@ button {
   font-style: italic;
   line-height: 1.5;
   text-align: center;
+}
+
+.thought-card h3 {
+  margin: 0 0 0.65rem;
+  color: var(--active);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.thought-card p {
+  max-width: 68rem;
+  margin: 0;
+  color: #3d3b38;
+  line-height: 1.55;
 }
 
 .overview-grid {
@@ -720,10 +730,6 @@ button {
   .work-layout {
     grid-template-columns: 1fr;
   }
-
-  .theme-panel {
-    order: 3;
-  }
 }
 
 @media (max-width: 800px) {
@@ -745,10 +751,6 @@ button {
     grid-template-columns: 1fr;
   }
 
-  .phase-track {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .phase-track::before {
     display: none;
   }
@@ -766,10 +768,6 @@ button {
 @media (max-width: 520px) {
   .hero h1 {
     font-size: 2.8rem;
-  }
-
-  .phase-track {
-    grid-template-columns: 1fr;
   }
 
   .detail-panel {
