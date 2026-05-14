@@ -726,6 +726,13 @@ button {
   margin: 2rem auto;
 }
 
+.meditation-page {
+  display: grid;
+  gap: 1rem;
+  width: min(1120px, calc(100% - 2rem));
+  margin: 2rem auto;
+}
+
 .text-panel {
   padding: clamp(1.5rem, 4vw, 3rem);
 }
@@ -738,6 +745,86 @@ button {
 
 .text-panel p + p {
   margin-top: 1rem;
+}
+
+.paper-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: start;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  background: rgba(252, 249, 243, 0.88);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(42, 32, 24, 0.06);
+}
+
+.paper-kicker {
+  margin: 0 0 0.45rem;
+  color: var(--active);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.paper-card h2 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.55rem, 2.6vw, 2.35rem);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.paper-card h3 {
+  margin: 1rem 0 0.45rem;
+  color: var(--active);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.paper-card p {
+  margin: 0;
+  color: #3d3b38;
+  line-height: 1.55;
+}
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0.8rem 0 0;
+}
+
+.paper-links a {
+  display: inline-flex;
+  padding: 0.45rem 0.7rem;
+  color: var(--active);
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.84rem;
+}
+
+.paper-links a:hover {
+  color: #ffffff;
+  background: var(--active);
+}
+
+.paper-images {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.paper-images.two-up {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.paper-images img {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(42, 32, 24, 0.08);
 }
 
 .bottom-actions {
@@ -782,6 +869,10 @@ button {
   .theme-panel {
     order: 3;
   }
+
+  .paper-card {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 800px) {
@@ -800,6 +891,10 @@ button {
   .work-grid,
   .about-row,
   .bottom-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .paper-images.two-up {
     grid-template-columns: 1fr;
   }
 

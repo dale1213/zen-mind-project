@@ -439,12 +439,12 @@ const works = {
           {
             quote: "...it must mean that this is a way of saying 'reincarnation.'",
             analysis:
-              "She begins to decode the monk's gestures. Awakening becomes a process rather than a single sudden event.",
+              "She begins to decode the monk's gestures. In such scenarios, we are seeing that awakening is a process that would take time to unfold.",
           },
           {
             quote: "Though he is a mad monk, there's something strange about it.",
             analysis:
-              "Her skepticism turns into curiosity. This marks the first psychological opening toward enlightenment.",
+              "She gradually becomes curious! This marks the starting point toward enlightenment.",
           },
           {
             quote:
@@ -468,12 +468,7 @@ const works = {
           {
             quote: "...an official who is sending that woman off on some kind of dirty business?",
             analysis:
-              "She begins to reconstruct the plot behind Yutong's fall. Memory returns gradually, raising again the question of who Liu Cui is after passing through these experiences.",
-          },
-          {
-            quote: "...it must be that I, too, created this grievance and enmity!",
-            analysis:
-              "She assumes she is involved in a sexual or karmic debt. Liu Cui's interpretation is still shaped by guilt, desire, and worldly causality.",
+              "She begins to reconstruct the plot behind Yutong's fall. A question therefore arises, who exactly is Liu Cui after passing through these experiences? Is she still Yutong? Then who exactly is englitened?",
           },
           {
             quote:
@@ -497,7 +492,7 @@ const works = {
             quote:
               "female lead throws down her hair bun and acts out taking off her women's clothes.",
             analysis:
-              "She abandons the visual signs of femininity and courtesan identity. Enlightenment is staged as the removal of a deluded self, raising the question of whether the awakening belongs to Liu Cui or Yutong.",
+              "She abandons the visual signs of femininity and courtesan identity. We can see another side of enlightenment, which is to abadon the outside appearance and return to the original self.",
           },
           {
             quote: "...giving them to female lead to put on.",
@@ -792,15 +787,15 @@ function renderTextPage(type) {
   app.innerHTML = `
     ${renderHero({
       image: assets.homeBackground,
-      kicker: isAbout ? "About" : "Method",
-      title: isAbout ? "A Comparative Study of Attachment" : "Reading Method",
+      kicker: isAbout ? "About" : "Meditation",
+      title: isAbout ? "A Comparative Study of Attachment" : "Meditation and the Mind",
       subtitle: isAbout
         ? "How three Zen works stage the same inner problem in different forms."
-        : "A literary and psychological approach to Zen texts.",
+        : "Scientific studies of meditation, brainwaves, and non-attachment.",
       accent: "#0d477b",
       compact: true,
     })}
-    <section class="text-page">
+    <section class="${isAbout ? "text-page" : "meditation-page"}">
       <article class="text-panel">
         ${
           isAbout
@@ -815,18 +810,70 @@ function renderTextPage(type) {
               </p>
             `
             : `
-              <h2>Method</h2>
+              <h2>Meditation Research</h2>
               <p>
-                The reading method combines close literary analysis with psychological interpretation. Each section
-                identifies a key narrative or poetic moment, then explains how that moment represents a state of mind.
-              </p>
-              <p>
-                The comparison is not meant to flatten the texts into one argument. Instead, it shows how sudden
-                enlightenment, poetic withdrawal, and dramatic delusion each expose a different pressure point in the problem of attachment.
+                This page connects the project's literary readings with contemporary neuroscience research on meditation,
+                brainwave activity, and the fragility of non-attachment.
               </p>
             `
         }
       </article>
+      ${
+        isAbout
+          ? ""
+          : `
+            <article class="paper-card">
+              <div class="paper-copy">
+                <p class="paper-kicker">Paper 1</p>
+                <h2>Short-term meditation training alters brain activity and sympathetic responses at rest, but not during meditation</h2>
+                <p class="paper-links">
+                  <a href="https://www.nature.com/articles/s41598-024-60932-8#Sec2" target="_blank" rel="noreferrer">Read the paper</a>
+                  <a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/brain-waves" target="_blank" rel="noreferrer">Brainwaves explanation</a>
+                </p>
+                <h3>Yinfu's thoughts</h3>
+                <p>
+                  The color-coding of this graph shows that the higher the T-statistic, the more red the brain regions recorded by the EEG.
+                  Researchers found that short-term mindfulness meditation is associated with increased theta-wave EEG power in the parietal
+                  and occipital lobes and increased alpha-wave EEG power in the frontal lobe, consistent across eyes-open and closed conditions
+                  relative to the control. Specifically, Fig. 1A and B demonstrate a significant cluster of theta waves in the posterior brain,
+                  known as the parietal-occipital areas, and a similar cluster of alpha waves in the anterior brain, specifically the frontal area.
+                  Based on my reading of the sutra, Huineng's brain activity during meditation will be similar to patterns shown in Fig. 1A and B,
+                  because his verse demonstrates an understanding of spiritual emptiness and sudden enlightenment. Whereas Shen-hsiu's brain
+                  activity possibly features lower levels of theta and alpha waves, indicating a more deluded and attached mind.
+                </p>
+              </div>
+              <div class="paper-images two-up">
+                <img src="assets/meditation/paper1image1.png" alt="Paper 1 EEG theta-wave figure" />
+                <img src="assets/meditation/paper1image2.png" alt="Paper 1 EEG alpha-wave figure" />
+              </div>
+            </article>
+
+            <article class="paper-card">
+              <div class="paper-copy">
+                <p class="paper-kicker">Paper 2</p>
+                <h2>Dynamic causal modeling of low-density resting-state EEG in long-term meditation practitioners</h2>
+                <p class="paper-links">
+                  <a href="https://www.nature.com/articles/s41598-026-41310-y?fromPaywallRec=false" target="_blank" rel="noreferrer">Read the paper</a>
+                </p>
+                <h3>Yinfu's thoughts</h3>
+                <p>
+                  The Default Mode Network (DMN) is a canonical neural network active during mind-wandering and passive rest. Researchers intended
+                  to investigate the effect of long-term mindfulness meditation on DMN connectivity using the dynamic causal computational model.
+                  In Figure 3, the forward, backward, and lateral connections refer to the directions of connectivity among the medial prefrontal
+                  cortex (mPFC), Precuneus (Prec), and the left and right lateral parietal lobes (lLP and rLP). They demonstrated a statistically
+                  significant positive effect size in backward connections. This suggests increased functional connectivity from mPFC to Prec, lLP,
+                  and rLP relative to the average. Hence, years of meditation enhance top-down cognitive control of DMN. Interestingly, in the play,
+                  Yutong states that he meditated for 20 years. However, even with twenty years of practice, the backward effect size, an indicator
+                  of connection strength, is not strong enough to exert control over his desires and distractions. Therefore, Yutong's spiritual
+                  collapse implies that non-attachment remains fragile and vulnerable to external disturbance, even with long-term meditation.
+                </p>
+              </div>
+              <div class="paper-images">
+                <img src="assets/meditation/paper2image1.png" alt="Paper 2 DMN connectivity figure" />
+              </div>
+            </article>
+          `
+      }
     </section>
   `;
 }
