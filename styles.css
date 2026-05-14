@@ -284,7 +284,7 @@ button {
 
 .work-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr) 180px;
   gap: 1rem;
   align-items: stretch;
   margin-top: 1.05rem;
@@ -396,6 +396,7 @@ button {
 }
 
 .detail-panel,
+.theme-panel,
 .text-panel {
   background: rgba(252, 249, 243, 0.86);
   border: 1px solid var(--line);
@@ -481,6 +482,7 @@ button {
 }
 
 .meaning-block h3,
+.theme-panel h3,
 .about-strip h3,
 .detail-toggle h3,
 .overview-details h4 {
@@ -609,6 +611,52 @@ button {
   line-height: 1.45;
 }
 
+.theme-panel {
+  padding: 1.5rem;
+}
+
+.theme-list {
+  display: grid;
+  gap: 0.72rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.theme-list li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 0.65rem;
+  align-items: center;
+  padding-bottom: 0.72rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.88rem;
+}
+
+.theme-list button {
+  width: 100%;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  text-align: left;
+}
+
+.theme-list button:hover,
+.theme-list button.is-active {
+  color: var(--active);
+}
+
+.theme-icon {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  color: var(--active);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+}
+
 .about-row {
   display: grid;
   grid-template-columns: 1fr;
@@ -729,6 +777,10 @@ button {
 @media (max-width: 1050px) {
   .work-layout {
     grid-template-columns: 1fr;
+  }
+
+  .theme-panel {
+    order: 3;
   }
 }
 

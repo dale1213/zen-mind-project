@@ -32,12 +32,8 @@ const works = {
     thought:
       "After close-reading Hui-neng's last verse, I interpret his warning of the dangers of epistemic and dualistic ideologies as an obstacle to sudden enlightenment that entraps beings in the endless cycle of reincarnation. In particular, I was drawn to his doctrine that detachment from the form leads to the perception of truth. Hence, the non-dualism between no-thought and true reality leads to enlightenment. Also, I realized that non-attachment is closely related to his argument that enlightenment is a dynamic state, inseparable from a straightforward mind. I found his emphasis on true wisdom, arising from the awakening of the \"Buddha seed,\" resonates with Hui-neng's awakened mind upon listening to the Diamond Sutra, revealing the intrinsic and sudden nature of enlightenment. Therefore, instead of rejecting the importance of teaching as an external trigger of enlightenment, Hui-neng suggests that Dharma is transmitted mind-to-mind beyond the physical form of language.",
     themes: [
-      { label: "Empty Mind", phases: [2, 4] },
-      { label: "Sudden Awakening", phases: [0, 3] },
-      { label: "Non-Attachment", phases: [1, 2, 4] },
-      { label: "No-Thought", phases: [2, 4] },
-      { label: "Identity Transformation", phases: [3] },
-      { label: "Mind-to-Mind Transmission", phases: [3] },
+      { label: "Non-attachment", phases: [2, 4] },
+      { label: "Sudden enlightenment", phases: [0, 3] },
     ],
     overview: [
       {
@@ -105,7 +101,7 @@ const works = {
             quote:
               "At midnight, without letting anyone see him, he went to write his mind-verse on the central section of the south corridor wall, hoping to gain the Dharma.",
             analysis:
-              "Shenxiu experiences mental turmoil while imagining Huangren's response to his verse. His spiritual entanglement in success and karmic obstruction reflects attachment rather than Buddhist emptiness.",
+              "Shenxiu experiences mental turmoil while imagining Huang-jen's response to his verse. His spiritual entanglement in success and karmic obstruction reflects attachment rather than Buddhist emptiness.",
           },
         ],
         comparison: {
@@ -129,7 +125,7 @@ const works = {
           "At midnight, the Fifth Patriarch expounds the Diamond Sutra to Huineng. Hearing it once, Huineng is immediately awakened and receives the Dharma.",
         quote: "Hearing it but once, I was immediately awakened, and that night I received the Dharma.",
         literary:
-          "Huineng's \"immediate awakening\" reinforces the Chan emphasis on the sudden and non-gradual nature of enlightenment. The statement that \"none of the others knew\" underscores that awakening is an internal transformation inaccessible to external verification.",
+          "Huineng's \"immediate awakening\" reinforces the Zen emphasis on the sudden and non-gradual nature of enlightenment. The statement that \"none of the others knew\" underscores that awakening is an internal transformation inaccessible to external verification.",
         psychological:
           "Although the robe introduces lineage and legitimacy, the Dharma is transmitted \"mind-to-mind.\" Enlightenment is not the acquisition of knowledge, but an ineffable moment of realization inspired by the teaching of the Dharma.",
       },
@@ -142,7 +138,7 @@ const works = {
         quote:
           "Nowhere is there anything true;\nDon't try to see the True in any way.\nIf you try to see the True,\nYour seeing will be in no way true.\nIf you yourself would gain the True,\nSeparate from the false; there the mind is true.",
         literary:
-          "Huineng's verse warns that even the search for truth can become an attachment. The Dharma is not grasped by fixing the mind on a concept of the True, but by separating from false forms without turning truth itself into an object.",
+          "Huineng's verse warns that even the search for truth can become an attachment. The Dharma is not grasped by fixing the mind on a concept of the truth, but by separating from false forms without turning truth itself into an object.",
         psychological:
           "His final teaching presents enlightenment as a dynamic, non-dual state inseparable from straightforward mind. The awakened mind does not reject teaching, but receives Dharma beyond the physical form of language in mind-to-mind transmission.",
         evidenceItems: [
@@ -328,8 +324,6 @@ const works = {
     thoughtTitle: "Tianle's thoughts",
     thought:
       "In Chan Master Yu's Dream of Cuixiang, he thinks of the drama as a rethinking of non-attachment. In the story, although Yutong has been practicing non-attachment in pursuit of enlightenment, he is still seduced by Red Lotus and overwhelmed by anger and desire. At this moment, he becomes “attached.” He reincarnates as Liu Cui to destroy Liu Xuanjiao's family reputation. Yet after indulging in the illusions of the pleasure world, Liu Cui can still be enlightened by the Moonlight Monk’s inspiration and becomes aware of her identity as the reincarnation of Yutong. She wears monk clothing and returns to her spiritual identity after her own awakening. Tianle therefore argues that Chan Master Yu's Dream of Cuixiang is a strong example of how Chan teaching views the fragility of enlightenment and awakening.",
-    finalInsight:
-      "Drama makes enlightenment delayed, embodied, theatrical, and dependent on recovering a forgotten karmic identity.",
     themes: [
       { label: "Desire", phases: [1, 3] },
       { label: "Illusion", phases: [3, 4] },
@@ -375,7 +369,7 @@ const works = {
             quote:
               "Having now lived here over twenty years, I realize I haven't much time left to reach the final level of spiritual attainment.",
             analysis:
-              "Liu Cui's hidden origin is Yutong, a monk who has spent decades pursuing enlightenment. Her later courtesan identity is therefore not permanent, but a temporary karmic disguise.",
+              "Liu Cui's hidden origin is Yutong, a monk who has spent decades pursuing enlightenment. This also paves the way for the later reincarnation of her.",
           },
           {
             quote: "That's it! I'm finished! I fell into this beast's snare!",
@@ -404,7 +398,7 @@ const works = {
           {
             quote: "...is reborn with no memory of his former identity.",
             analysis:
-              "Liu Cui forgets that she was Yutong. Her identity is split between a hidden spiritual origin and a present worldly life. This raises the central question of whether Liu Cui is still Yutong or has become someone else.",
+              "Liu Cui forgets that she was Yutong. Her identity is split between a hidden spiritual origin and a present worldly life. Is Liucui still Yutong when all the memories are gone, and the identity grows completely independent of Yutong?",
           },
           {
             quote:
@@ -456,7 +450,7 @@ const works = {
             quote:
               "He takes out the gauze hat... puts on the female mask... He puts on the monk's cap...",
             analysis:
-              "Moonlight Monk reconstructs Yutong's past through performance rather than doctrine. Liu Cui's awakening is theatrical, visual, and embodied.",
+              "Moonlight Monk performs Yutong's past to Liucui to awaken her. ",
           },
         ],
       },
@@ -508,7 +502,7 @@ const works = {
           {
             quote: "...giving them to female lead to put on.",
             analysis:
-              "By putting on monk's clothing, Liu Cui returns to Yutong's spiritual identity. Costume change becomes a symbol of inner transformation.",
+              "By putting on monk's clothing, Liu Cui returns to Yutong's spiritual identity. The custum change here is a representation of the transformation of the inner identity.",
           },
           {
             quote: "Younger Brother,\nYou finished this scene in an instant.",
@@ -603,16 +597,13 @@ function renderHome() {
   app.innerHTML = `
     ${renderHero({
       image: assets.homeBackground,
-      title: "A Psychological Analysis of Chinese Zen Buddhism Texts",
-      subtitle: "A Psychological Exploration of Mind, Desire, and Enlightenment in Chinese Zen Texts",
+      title: " The Harmony & Dissonance of Non-Attachment",
+      subtitle: "A Psychological Analysis of Chinese Zen Buddhism Texts",
       accent: "#0d477b",
     })}
     <section class="content-shell">
       <p class="intro-text">
-        This project investigates the theme of non-attachment across three classic Chinese Zen texts,
-        each revealing a distinct psychological landscape of the mind's struggle toward liberation.
-        Through comparative reading and conceptual analysis, the project traces the tension between
-        awakening and attachment at the heart of human experience.
+        While the sutra presents non-attachment as a sudden enlightenment, other texts reveal it to be a gradual, unstable spiritual development. In particular, the sutra articulates a model of sudden awakening exemplified by Huineng, while the poems portray a constant practice and a fluid representation of detachment. In contrast, the play exposes how desire prevents such spiritual liberation through karmic retribution, suggesting that non-attachment requires continuous wrestling with worldly cravings.
       </p>
       <div class="work-grid" aria-label="Featured works">
         ${Object.values(works)
@@ -633,6 +624,7 @@ function renderHome() {
 function renderWork(work) {
   const phase = work.phases[state.phaseIndex] ?? work.phases[0];
   state.phaseIndex = work.phases.indexOf(phase);
+  const themes = work.themes.map((theme) => (typeof theme === "string" ? { label: theme, phases: [] } : theme));
 
   app.innerHTML = `
     ${renderHero({
@@ -773,6 +765,22 @@ function renderWork(work) {
           }
           ${work.finalInsight ? `<p class="final-insight">${work.finalInsight}</p>` : ""}
         </article>
+
+        <aside class="theme-panel">
+          <h3>Key Themes</h3>
+          <ul class="theme-list">
+            ${themes
+              .map(
+                (theme, index) => `
+                  <li>
+                    <span class="theme-icon">${index + 1}</span>
+                    <button type="button" data-theme-phases="${theme.phases.join(",")}">${theme.label}</button>
+                  </li>
+                `,
+              )
+              .join("")}
+          </ul>
+        </aside>
       </div>
     </section>
   `;
@@ -803,8 +811,7 @@ function renderTextPage(type) {
                 remains so difficult even when enlightenment is described as clear, immediate, or already present.
               </p>
               <p>
-                Each work is organized as a sequence of clickable phases. The structure highlights how the mind
-                moves from attachment toward insight, but also how desire, memory, role, and identity interrupt that movement.
+                The code is available on <a href="https://github.com/dale1213/zen-mind-project" target="_blank">GitHub</a>.
               </p>
             `
             : `
@@ -842,6 +849,25 @@ function render() {
 document.addEventListener("click", (event) => {
   const routeButton = event.target.closest("[data-route]");
   const phaseButton = event.target.closest("[data-phase]");
+  const themeButton = event.target.closest("[data-theme-phases]");
+
+  if (themeButton) {
+    const relatedPhases = themeButton.dataset.themePhases
+      .split(",")
+      .filter(Boolean)
+      .map((phase) => Number.parseInt(phase, 10));
+
+    document.querySelectorAll("[data-theme-phases]").forEach((button) => {
+      button.classList.toggle("is-active", button === themeButton);
+    });
+
+    document.querySelectorAll("[data-phase]").forEach((button) => {
+      const phaseIndex = Number.parseInt(button.dataset.phase, 10);
+      button.classList.toggle("is-theme-related", relatedPhases.includes(phaseIndex));
+    });
+
+    return;
+  }
 
   if (phaseButton) {
     const phaseIndex = Number.parseInt(phaseButton.dataset.phase, 10);
